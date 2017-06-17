@@ -49,10 +49,17 @@
 		class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
 		<property name="converters">
 			<set>
-				<bean class="br.order.converter.DateConverter"></bean>
+				<bean class="jphs.wap.converter.DateConverter"></bean>
 			</set>
 		</property>
 	</bean>
+
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/**" />
+			<bean class="jphs.wap.controller.filter.SysInfoFilter"></bean>
+		</mvc:interceptor>
+	</mvc:interceptors>
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/" />
