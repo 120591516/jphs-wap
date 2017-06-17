@@ -55,6 +55,11 @@
 			<artifactId>spring-integration-mail</artifactId>
 			<version>4.2.0.RELEASE</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.3.5</version>
+		</dependency>
 		<!-- JSP相关 -->
 		<dependency>
 			<groupId>jstl</groupId>
@@ -72,6 +77,13 @@
 			<artifactId>jsp-api</artifactId>
 			<version>2.0</version>
 		</dependency>
+		<!-- 依赖阿里巴巴json处理工具 -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.7</version>
+		</dependency>
+		
 		<!-- dubbo-zookeeper相关依赖 -->
 		<dependency>
 			<groupId>com.alibaba</groupId>
