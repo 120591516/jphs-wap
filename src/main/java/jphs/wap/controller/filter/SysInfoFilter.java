@@ -45,7 +45,7 @@ public class SysInfoFilter implements HandlerInterceptor {
         System.out.println("preHandle......");
         reqeustUrl = request.getRequestURI();
         logger.info("preHandle Request--> URL is " + reqeustUrl + ",parameter is " + HttpRequestResolve.getRequestBody(request));
-        System.out.println((new Date()) + " preHandle Request--> URL is " + reqeustUrl + ",parameter is " + HttpRequestResolve.getRequestBody(request));
+        System.out.println((sdf.format(new Date())) + " preHandle Request--> URL is " + reqeustUrl + ",parameter is " + HttpRequestResolve.getRequestBody(request));
         return true;
     }
 
